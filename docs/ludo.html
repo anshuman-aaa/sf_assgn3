@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<style type="text/css">
+		#roll{ position: absolute;
+			font-size: 35px;
+		top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+padding-top: 1%;
+padding-bottom: 1%;
+padding-left: 3%;
+padding-right: 3%;}
+#p3{ position: absolute;
+			font-size: 35px;
+		top:  60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+	</style>
+    <title>ModernLudo</title>
+    <link rel="stylesheet" type="text/css" href="ludo-css.css" />
+</head>
+<body>
+	 <p id="ppp"><font size="6">Locker For A</font><br><font size="15">&ensp;&nbsp;2 A</font></p>
+	  <p id="pp2"><font size="6">Locker For B</font><br><font size="15">&ensp;&nbsp;2 B</font></p>
+	  <p id="p3" style="z-index:3"></p>
+    <div id="playGround" style="display:none;">
+        <div id="main">
+            <canvas id="gameboard" style="z-index:"></canvas>
+        </div>
+    </div>
+    <script type="text/javascript" src="ludo-js.js">
+    	
+    </script>
+
+</div>
+<button id="roll" onclick="random()">ROLL</button>
+</body>
+</html>
