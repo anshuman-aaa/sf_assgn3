@@ -3,7 +3,7 @@ window.onresize = resizeboard;
 var maindiv;
 var canvas = null, ctx = null;
 
-
+var pos = 332;
 function init() {
     initPlayGround();
 }
@@ -140,8 +140,22 @@ for (var i=0;i<imgData.data.length;i+=4)
 return imgData;
 }
 document.getElementById("roll").addEventListener("click", random);
+
 function random()
 {
     var rand=Math.floor((Math.random() * 6) + 1);
 document.getElementById("p3").innerHTML = rand;
+
+myMove(rand);
 }
+document.getElementById("animate").style.width =tileWidth 
+document.getElementById("animate").style.height =tileWidth;
+function myMove(rand) {
+  /*var elem = document.getElementById("animate");*/   
+  
+      pos=pos+tileWidth; 
+      
+     document.getElementById("animate").style.left = (rand-1)*(tileWidth)+ pos + 'px'; 
+    
+  }
+
